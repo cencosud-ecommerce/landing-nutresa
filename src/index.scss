@@ -1,3 +1,39 @@
-body{
-    background-color: antiquewhite;
+body.landing-nutresa{
+    .section__header-brands{
+        border: 1px dashed black;
+        width: 100%;
+        height: 60px;
+        display: grid;
+        grid-template-columns: 200px 100px 100px 100px 100px;
+        justify-content: center;
+        align-content: center;
+        img{
+            width: 100px;
+        }
+        p{
+            align-self: center;
+        }
+    }
+    .section__header-xmas{
+        img{
+            display: block;
+            margin: auto;
+            width: 80%;
+        }
+    }
+}
+.n-header{
+    border: 1px dashed black;
+    width: 100%;
+    height: 250px;
+}
+.n-banner{
+    border: 1px dashed black;
+    width: 100%;
+    height: 150px;
+}
+.n-row{
+    border: 1px dashed black;
+    width: 100%;
+    height: 300px;
 }
