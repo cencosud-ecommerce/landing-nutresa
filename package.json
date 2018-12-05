@@ -1,0 +1,28 @@
+{
+  "name": "landing-nutresa",
+  "version": "1.0.0",
+  "description": "Landing para Nutresa - Tiendasjumbo.co",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cencosud-ecommerce/landing-nutresa.git"
+  },
+  "keywords": [
+    "nutresa",
+    "jumbo",
+    "tiendasjumbo.co"
+  ],
+  "author": "CA",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cencosud-ecommerce/landing-nutresa/issues"
+  },
+  "homepage": "https://github.com/cencosud-ecommerce/landing-nutresa#readme",
+  "devDependencies": {
+    "webpack": "^4.27.0",
+    "webpack-cli": "^3.1.2"
+  }
+}
