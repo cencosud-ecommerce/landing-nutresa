@@ -34,6 +34,7 @@
     "mini-css-extract-plugin": "^0.4.5",
     "path": "^0.12.7",
     "sass-loader": "^7.1.0",
-    "url-loader": "^1.1.2"
+    "url-loader": "^1.1.2",
+    "wowjs": "^1.1.3"
   }
 }

@@ -1,44 +1,332 @@
 @import "../node_modules/animate.css/animate.min.css";
 
-body.landing-nutresa{
-    .section__header-nutresa{
-
+body.landing-nutresa {
+    .section__header-nutresa {
+        position: relative;
+        .light {
+            display: block;
+            position: absolute;
+            z-index: 1;
+            overflow: hidden;
+            visibility: hidden;
+            @media screen and (max-width: 760px) {
+                display: none !important;
+                opacity: 0 !important;
+            }
+            &.red{
+                background: url(https://www.tiendasjumbo.co/arquivos/luz-roja.png)
+                no-repeat;
+                background-size: contain;
+            }
+            &.yellow{
+                background: url(https://www.tiendasjumbo.co/arquivos/luz-amarilla.png)
+                no-repeat;
+                background-size: contain;
+            }
+            &.light-1 {
+                width: 30px;
+                height: 30px;
+                top: 20px;
+                left: 100px;
+                @media screen and (min-width: 761px) and (max-width: 1350px) {
+                    top: 17px;
+                }
+            }
+            &.light-2 {
+                width: 40px;
+                height: 40px;
+                top: 40px;
+                left: 300px;
+                @media screen and (min-width: 761px) and (max-width: 1350px) {
+                    top: 30px;
+                }
+            }
+            &.light-3 {
+                width: 50px;
+                height: 50px;
+                top: 30px;
+                left: 500px;
+                @media screen and (min-width: 761px) and (max-width: 1350px) {
+                    top: 12px;
+                }
+            }
+            &.light-4 {
+                width: 20px;
+                height: 20px;
+                top: 10px;
+                right: 325px;
+                @media screen and (min-width: 761px) and (max-width: 1350px) {
+                    top: 20px;
+                }
+            }
+            &.light-5 {
+                width: 30px;
+                height: 30px;
+                top: 20px;
+                right: 420px;
+                @media screen and (min-width: 761px) and (max-width: 1350px) {
+                    top: 15px;
+                }
+            }
+            &.light-6 {
+                width: 10px;
+                height: 10px;
+                top: 30px;
+                left: 480px;
+                @media screen and (min-width: 761px) and (max-width: 1350px) {
+                    top: 10px;
+                }
+            }
+            &.light-7 {
+                width: 50px;
+                height: 50px;
+                top: 10px;
+                right: 270px;
+                @media screen and (min-width: 761px) and (max-width: 1350px) {
+                    top: 20px;
+                }
+            }
+            &.light-8 {
+                width: 10px;
+                height: 10px;
+                top: 30px;
+                right: 50px;
+                @media screen and (min-width: 761px) and (max-width: 1350px) {
+                    top: 10px;
+                }
+            }
+        }
+        img {
+            width: 100%;
+            @media screen and (max-width: 760px) {
+                width: 110%;
+            }
+        }
     }
-    .section__header-brands{
-        border: 1px dashed black;
+    .section__header-brands {
         width: 100%;
         height: 60px;
         display: grid;
-        grid-template-columns: 200px 100px 100px 100px 100px;
+        grid-template-columns: 200px 80px 100px 100px 100px;
         justify-content: center;
         align-content: center;
-        img{
-            width: 100px;
+        @media screen and (max-width: 760px) {
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         }
-        p{
+        img {
+            width: 100px;
+            @media screen and (max-width: 760px) {
+                width: 65px;
+            }
+        }
+        p {
             align-self: center;
+            justify-self: end;
+            font-size: 1.3em;
+            @media screen and (max-width: 480px) {
+                font-size: 0.8em;
+            }
         }
     }
-    .section__header-xmas{
-        img{
+    .section__header-xmas {
+        position: relative;
+        .text-xmas {
             display: block;
             margin: auto;
             width: 80%;
+            position: relative;
+            z-index: 2;
+            @media screen and (max-width: 480px) {
+                width: 110%;
+            }
+        }
+        .bg-banner {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            @media screen and (max-width: 480px) {
+                width: 110%;
+            }
+        }
+        .star {
+            display: block;
+            position: absolute;
+            background: url(https://mtedwards.s3.amazonaws.com/sparkle.png)
+                no-repeat;
+            background-size: contain;
+            z-index: 1;
+            overflow: hidden;
+            @media screen and (max-width: 760px) {
+                display: none !important;
+                opacity: 0 !important;
+            }
+            &.star-1 {
+                width: 50px;
+                height: 34px;
+                top: 110px;
+                left: 97px;
+                @media screen and (min-width: 761px) and (max-width: 1350px) {
+                    top: 80px;
+                }
+            }
+            &.star-2 {
+                width: 83px;
+                height: 77px;
+                top: 18px;
+                right: 224px;
+                @media screen and (min-width: 761px) and (max-width: 1350px) {
+                    top: 0px;
+                }
+            }
+            &.star-3 {
+                width: 74px;
+                height: 70px;
+                top: 115px;
+                left: 200px;
+                @media screen and (min-width: 761px) and (max-width: 1350px) {
+                    top: 70px;
+                }
+            }
+            &.star-4 {
+                width: 68px;
+                height: 70px;
+                top: 30px;
+                left: 162px;
+                @media screen and (min-width: 761px) and (max-width: 1350px) {
+                    top: 10px;
+                }
+            }
+            &.star-5 {
+                width: 68px;
+                height: 50px;
+                top: 46px;
+                right: 362px;
+                @media screen and (min-width: 761px) and (max-width: 1320px) {
+                    top: 15px;
+                }
+            }
+            &.star-6 {
+                width: 78px;
+                height: 60px;
+                top: 60px;
+                right: 102px;
+                @media screen and (min-width: 761px) and (max-width: 1320px) {
+                    top: 10px;
+                }
+            }
+            &.star-7 {
+                width: 60px;
+                height: 70px;
+                top: 40px;
+                right: 402px;
+                @media screen and (min-width: 761px) and (max-width: 1320px) {
+                    top: 5px;
+                }
+            }
+        }
+    }
+    .section__banner-cookies{
+        position: relative;
+        .text-main-banner{
+            display: block;
+            position: absolute;
+            left: 150px;
+            top: 20px;
+            width: 350px;
+            @media screen and (min-width: 761px) and (max-width: 1320px) {
+                width: 250px;
+            }
+            @media screen and (max-width: 760px){
+                display: none;
+            }
+        }
+        .sub-text-main-banner{
+            position: absolute;
+            left: 150px;
+            top: 150px;
+            width: 400px;
+            @media screen and (min-width: 761px) and (max-width: 1320px) {
+                left: 180px;
+                top: 120px;
+                width: 200px;
+            }
+            @media screen and (max-width: 760px){
+                display: none;
+            }
+        }
+    }
+    .section__banner-cookies,
+    .section__banner-meat,
+    .section__banner-choco{
+        .star-main{
+            width: 100px;
+            position: absolute;
+            left: 20px;
+            top: 60px;
+            display: block;
+            @media screen and (max-width: 760px){
+                display: none;
+            }
+        }
+    }
+    // .section__banner-choco{
+    //     .star-main{
+    //         animation: rotate 10s linear infinite;
+    //     }
+    // }
+}
+.n-header {
+    width: 100%;
+    height: auto;
+}
+.n-banner {
+    width: 100%;
+    height: auto;
+    position: relative;
+
+    img {
+        @media screen and (min-width: 620px) {
+            width: 100%;
         }
     }
 }
-.n-header{
-    border: 1px dashed black;
-    width: 100%;
-    height: auto;
-}
-.n-banner{
-    border: 1px dashed black;
-    width: 100%;
-    height: auto;
-}
-.n-row{
-    border: 1px dashed black;
+.n-row {
     width: 100%;
     height: 600px;
+    @media screen and (max-width: 760px){
+        display: none;
+    }
+    @media screen and (min-width: 760px){
+        display: block;
+    }
 }
+.n-row-mobile{
+    display: block;
+    @media screen and (min-width: 760px){
+        display: none;
+    }
+    @media screen and (max-width: 760px){
+        display: block;
+    }
+}
+
+
+// Override styles
+.wrapper.wrapper.featured-categories-products {
+    margin: 0 !important;
+    @media screen and (max-width: 760px){
+        margin: 0 0 20px 0 !important;
+    }
+}
+
+// Hide wow elements
+.wow{
+    visibility: hidden;
+}
+
+@keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }
